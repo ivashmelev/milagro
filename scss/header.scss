@@ -1,0 +1,310 @@
+header{
+  width: 100%;
+}
+
+.block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 3px solid #E08298;
+  padding-top: 9px;
+
+  .phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo{
+      width: 18px;
+      height: 18px;
+    }
+    
+    .text{
+      color: black;
+      font-size: 24px;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+  }
+
+  .icons{
+    display: flex;
+    flex-direction: row;
+
+    .icon{
+      padding: 0 22px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    
+      .stat{
+        display: none;
+      }
+    }
+
+    .icon.is-stat{
+      .stat{
+        width: 23px;
+        height: 23px;
+        background-color: #E08298;
+        color: white;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        margin-top: -7px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.menu{
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  height: 45px;
+  // height: 45px;
+  align-items: center;
+  margin-top: 21px;
+
+  .hamburger{
+    display: none
+  }
+  
+  a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    padding: 0 15px;
+  }
+
+  .text{
+    margin-left: 10px;
+    transition: .7s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 29px;
+
+    &:hover{
+      color: #E08298;
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      position: relative;
+      height: 3px;
+      top: 11px;
+    }
+
+    &:hover::after{
+      content: "";
+      display: block;
+      position: relative;
+      background-color: #E08298;
+    }  
+  }
+
+  .clothes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .clothes-point{
+      display: flex;
+      align-items: center;
+      border-bottom: 3px solid white;
+
+      .text:nth-child(3)::after{
+        top: 4px;
+      }
+    }
+  }
+
+  .links{
+    display: flex;
+    flex-direction: row;
+
+    .link-point{
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 1259px) {
+  .menu{
+    height: 75px;
+
+    .text:after{
+      top: 27px;
+    }
+
+    .text.jeens::after{
+      top: 4px;
+    }
+
+    .text.about::after{
+      top: 3px;
+    }
+  }
+}
+
+@media only screen and (min-width: 678px) and (max-width: 1170px) {
+  .block{
+    flex-direction: column;
+
+    .phone, .logo, .icons{
+      margin-top: 20px;
+    }
+  }
+
+  .menu{
+    flex-direction: column;
+    margin-top: 70px;
+    border: none;
+
+    .text::after{
+      top: 4px;
+    }
+
+    .links{
+      margin-top: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 678px) {
+  .block{
+    flex-direction: column;
+
+    .phone, .logo, .icons{
+      margin-top: 20px;
+    }
+
+    .logo{
+      img{
+        width: 300px;
+      }
+    }
+  }
+
+  .menu{
+    flex-direction: column;
+    border: none;
+    align-items: flex-end;
+    width: 95%;
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid black;
+    margin: auto;
+    margin-top: 30px;
+
+    .text::after{
+      top: 4px;
+    }
+
+    .hamburger{
+      display: block;
+      width: 50px;
+      height: 40px;
+      position: relative;
+
+      .line{
+        width: 40px;
+        height: 5px;
+        background-color: black;
+        border-radius: 6px;
+        display: block;
+        padding: -5px 0;
+        margin: 7px 0;
+        left: 0;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+
+      .line:nth-child(3){
+        margin-top: -12px;
+      }
+    }
+
+    .clothes{
+      position: absolute;
+      height: 170px;
+      width: 100%;
+      flex-direction: column;
+      margin-top: 140px;
+      left: -300px;
+      display: none;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      .clothes-point{
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 13px;
+      }
+    }
+
+    .links{
+      height: 240px;
+      width: 100%;
+      flex-direction: column;
+      margin-top: 345px;
+      position: absolute;
+      left: -300px;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      .link-point{
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 13px;
+      }
+    }
+  }
+
+  .menu.open{
+
+    .hamburger{
+      margin-top: -10px;
+
+      .line{
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        position: relative;
+      }
+
+      .line:nth-child(1){
+        width: 0;
+        left: 50px
+      }
+
+      .line:nth-child(2){
+        transform: rotate(-45deg);
+      }
+
+      .line:nth-child(3){
+        transform: rotate(45deg);
+      }
+
+      .line:nth-child(4){
+        width: 0;
+        left: 50px;
+      }
+    }
+
+    .clothes{
+      display: flex;
+      left: 0;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .links{
+      display: flex;
+      left: 0;
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  }
+}
