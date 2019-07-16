@@ -12,10 +12,11 @@
 <body>
   <div class="wrapper">
     <section class="header">
-      <?php require_once ("header.php"); ?>
+      <?php require_once ("header.html"); ?>
     </section>
     <section class="content">
-      <?php require_once ("slider.php"); ?>
+      <?php require_once ("slider.html"); ?>
+      <?php require_once ('collection.html'); ?>
     </section>
     <section class="footer"></section>
   </div>
