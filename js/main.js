@@ -1,5 +1,9 @@
 'use strict'
 
 import {openMenu} from './menu.js';
+import {slider} from './slider.js';
 
-openMenu();
+(async () => {
+  openMenu();
+  slider();
+})();

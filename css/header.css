@@ -74,7 +74,7 @@ header {
 .menu .text {
   margin-left: 10px;
   transition: 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
-  height: 29px;
+  height: 25px;
 }
 .menu .text:hover {
   color: #E08298;
@@ -198,8 +198,7 @@ header {
     width: 100%;
     flex-direction: column;
     margin-top: 140px;
-    left: -300px;
-    display: none;
+    left: -700px;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .menu .clothes .clothes-point {
@@ -214,7 +213,7 @@ header {
     flex-direction: column;
     margin-top: 345px;
     position: absolute;
-    left: -300px;
+    left: -700px;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   .menu .links .link-point {
