@@ -1,20 +1,15 @@
 .slider{
   background-color: #d6f5ff59;
-  position: absolute;
-}
-
-.owl-carousel .owl-stage-outer{
-  position: absolute
 }
 
 .background{
   width: 100%;
-  // background-image: url(../img/slider/banner.png);
+  background-image: url(../img/slider/banner.png);
   height: 659px;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  // left: 0;
+  left: 0;
   transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
