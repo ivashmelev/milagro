@@ -1,6 +1,7 @@
 @import '../css/header.css';
 @import '../css/slider.css';
 @import '../css/collection.css';
+@import '../css/newCollection.css';
 html, body {
   width: 100%;
   margin: 0;
