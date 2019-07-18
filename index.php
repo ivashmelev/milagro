@@ -15,12 +15,15 @@
       <?php require_once ("header.html"); ?>
     </section>
     <section class="content">
-      <?php require_once ("slider.html"); ?>
+      <?php require_once ('slider.html'); ?>
       <?php require_once ('collection.html'); ?>
       <?php require_once ('new_collection.html'); ?>
       <?php require_once ('banner.html'); ?>
+      <?php require_once ('info.html'); ?>
     </section>
-    <section class="footer"></section>
+    <section class="footer">
+      <?php require_once ('footer.html') ?>
+    </section>
   </div>
 </body>
 </html>

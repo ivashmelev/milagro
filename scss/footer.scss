@@ -1,0 +1,234 @@
+footer{
+  width: 100%;
+  background-color: #F3F3F3;
+  height: 270px;
+  padding-top: 30px;
+  margin-top: 50px;
+  position: relative;
+
+  .wrapper{
+    width: 1175px;
+    margin: auto;
+
+    .content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      .description{
+        display: flex;
+        flex-direction: column;
+        width: 323px;
+    
+        .logo{
+          width: 217px;
+        }
+    
+        .text{
+          font-size: 15px;
+          color: #575757;
+          text-align: justify;
+        }
+      }
+
+      .block_link{
+        display: flex;
+        flex-direction: column;
+
+        .link{
+          font-size: 16px;
+          color: #575757;
+          margin-top: 7px;
+        }
+      }
+
+      .contacts{
+
+        .phone{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .logo{
+            width: 18px;
+            height: 18px;
+          }
+
+          .text{
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+            margin-left: 10px;
+          }
+        }
+
+        .button{
+          display: flex;
+          flex-direction: row;
+          width: 180px;
+          height: 42px;
+          background-color: #E08298;
+          position: relative;
+          margin: 17px 0;
+          transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+          &:hover{
+            cursor: pointer;
+            background-color: #e06b87;
+            transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+          }
+    
+          img{
+            width: 17px;
+            height: 19px;
+            padding: 13px 11px;
+            border-right: 1px solid #ffffff33;
+          }
+    
+          .text{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            color: white;
+            margin: unset;
+          }
+        }
+
+        .soc_net{
+          
+          .block_soc_net{
+            margin-top: 7px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 65%;
+          }
+        }
+      }
+    }
+
+    .copyright{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 48px;
+
+      .eula{
+        height: 34px;
+        line-height: 22px;
+
+        a{
+          color: #9D9C9C;
+          font-size: 14px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .line{
+    width: 100%;
+    height: 1px;
+    background-color: #E7E7E7;
+    position: absolute;
+    top: 251px;
+  }
+}
+
+@media only screen and (min-width: 678px) and (max-width: 1170px) {
+  footer{
+    height: unset;
+
+    .wrapper{
+      width: unset;
+  
+      .content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .description{
+
+          .logo{
+            margin: auto;
+          }
+
+          .text{
+            text-align: center;
+          }
+        }
+
+        .contacts{
+
+          .soc_net{
+            
+            .block_soc_net{
+              width: unset;
+            }
+          }
+        }
+      }
+  
+      .copyright{
+        flex-direction: column;
+        margin-top: 25px;
+        height: unset;
+      }
+    }
+
+    .line{
+      top: 221px;
+    }
+  }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 678px) {
+  footer{
+    height: unset;
+
+    .wrapper{
+      width: unset;
+  
+      .content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .description{
+
+          .logo{
+            margin: auto;
+          }
+
+          .text{
+            text-align: center;
+          }
+        }
+
+        .contacts{
+
+          .soc_net{
+            
+            .block_soc_net{
+              width: unset;
+            }
+          }
+        }
+      }
+  
+      .copyright{
+        flex-direction: column;
+        margin-top: 25px;
+        height: unset;
+      }
+    }
+
+    .line{
+      top: 221px;
+    }
+  }
+}

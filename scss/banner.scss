@@ -60,7 +60,7 @@
 
 @media only screen and (min-width: 678px) and (max-width: 1170px) {
   .banner{
-    width: unset;
+    width: 74%;
     background-position: -310px;
 
     .border{
@@ -71,6 +71,19 @@
 
 @media only screen and (min-width : 320px) and (max-width : 678px) {
   .banner{
-    display: none;
+    width: 100%;
+
+    .geometry{
+      background-size: cover;
+
+        .text{
+          font-size: unset;
+      }
+    }
+
+    .border{
+      width: 100%;
+      left: 0;
+    }
   }
 }
