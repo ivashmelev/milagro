@@ -2,6 +2,7 @@
 @import '../css/slider.css';
 @import '../css/collection.css';
 @import '../css/newCollection.css';
+@import '../css/banner.css';
 html, body {
   width: 100%;
   margin: 0;

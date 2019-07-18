@@ -18,6 +18,7 @@
       <?php require_once ("slider.html"); ?>
       <?php require_once ('collection.html'); ?>
       <?php require_once ('new_collection.html'); ?>
+      <?php require_once ('banner.html'); ?>
     </section>
     <section class="footer"></section>
   </div>
