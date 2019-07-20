@@ -161,6 +161,8 @@ header{
     .phone, .logo, .icons{
       margin-top: 20px;
     }
+
+    
   }
 
   .menu{
@@ -184,6 +186,18 @@ header{
 
     .phone, .logo, .icons{
       margin-top: 20px;
+    }
+
+    .icons{
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: 230px;
+      width: 300px;
+
+      .icon{
+        padding: 0 13px;
+      }
     }
 
     .logo{

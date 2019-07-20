@@ -6,14 +6,14 @@
   justify-content: center;
   position: relative;
   background-repeat: no-repeat;
-  background-image: url('./assets/img/slider/banner.png');
+  background-image: url('../img/slider/banner.png');
   margin: auto;
   cursor: pointer;
 
   .geometry{
     display: flex;
     flex-direction: column;
-    background-image: url(./assets/img/geometry_banner.png);
+    background-image: url(../img/geometry_banner.png);
     background-repeat: no-repeat;
     background-size: contain;
     overflow: auto;

@@ -155,6 +155,16 @@ header {
   .block .phone, .block .logo, .block .icons {
     margin-top: 20px;
   }
+  .block .icons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 230px;
+    width: 300px;
+  }
+  .block .icons .icon {
+    padding: 0 13px;
+  }
   .block .logo img {
     width: 300px;
   }

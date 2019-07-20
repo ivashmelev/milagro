@@ -1,10 +1,10 @@
-@import './assets/css/header.css';
-@import './assets/css/slider.css';
-@import './assets/css/collection.css';
-@import './assets/css/newCollection.css';
-@import './assets/css/banner.css';
-@import './assets/css/info.css';
-@import './assets/css/footer.css';
+@import '../css/header.css';
+@import '../css/slider.css';
+@import '../css/collection.css';
+@import '../css/newCollection.css';
+@import '../css/banner.css';
+@import '../css/info.css';
+@import '../css/footer.css';
 
 html, body {
   width: 100%;
@@ -14,3 +14,15 @@ html, body {
 }
 
 
+
+
+@media only screen and (min-width: 320px) and (max-width: 678px) {
+  .content{
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .content.open{
+    margin-top: 450px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}

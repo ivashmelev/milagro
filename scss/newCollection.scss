@@ -51,7 +51,7 @@
         .icon_new{
           margin-left: 16px;
           margin-top: 16px;
-          background-image: url('./assets/img/new.png');
+          background-image: url('../img/new.png');
           width: 35px;
           height: 34px;
           background-repeat: no-repeat;
@@ -61,7 +61,7 @@
         .icon_like{
           margin-right: 16px;
           margin-top: 16px;
-          background-image: url('./assets/img/product_like.png');
+          background-image: url('../img/product_like.png');
           width: 35px;
           height: 34px;
           background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 
           &:hover{
             cursor: pointer;
-            background-image: url('./assets/img/product_like_hover.png');
+            background-image: url('../img/product_like_hover.png');
             transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
           }
         }

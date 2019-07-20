@@ -4,7 +4,7 @@
 
 .background{
   width: 100%;
-  background-image: url(./assets/img/slider/banner.png);
+  background-image: url(../img/slider/banner.png);
   height: 659px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,26 +25,26 @@
 
 
   .arrow-right{
-    background-image: url('./assets/img/arrow.png');
+    background-image: url('../img/arrow.png');
     width: 20px;
     height: 64px;
     transform: rotate(180deg);
 
     &:hover{
       cursor: pointer;
-      background-image: url('./assets/img/arrow_hover.png');
+      background-image: url('../img/arrow_hover.png');
       transform: unset;
     }
   }
 
   .arrow-left{
-    background-image: url('./assets/img/arrow.png');
+    background-image: url('../img/arrow.png');
     width: 20px;
     height: 64px;
 
     &:hover{
       cursor: pointer;
-      background-image: url('./assets/img/arrow_hover.png');
+      background-image: url('../img/arrow_hover.png');
       transform: rotate(180deg);
     }
 

@@ -4,7 +4,7 @@
 
 .background {
   width: 100%;
-  background-image: url(./assets/img/slider/banner.png);
+  background-image: url(../img/slider/banner.png);
   height: 659px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,24 +24,24 @@
   margin: auto;
 }
 .control-block .arrow-right {
-  background-image: url("./assets/img/arrow.png");
+  background-image: url("../img/arrow.png");
   width: 20px;
   height: 64px;
   transform: rotate(180deg);
 }
 .control-block .arrow-right:hover {
   cursor: pointer;
-  background-image: url("./assets/img/arrow_hover.png");
+  background-image: url("../img/arrow_hover.png");
   transform: unset;
 }
 .control-block .arrow-left {
-  background-image: url("./assets/img/arrow.png");
+  background-image: url("../img/arrow.png");
   width: 20px;
   height: 64px;
 }
 .control-block .arrow-left:hover {
   cursor: pointer;
-  background-image: url("./assets/img/arrow_hover.png");
+  background-image: url("../img/arrow_hover.png");
   transform: rotate(180deg);
 }
 .control-block .block-text {
