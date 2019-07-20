@@ -16,11 +16,11 @@ function getFiles($path){
 
   for($i=2; $i<count($dir); $i++){
     if(valid($dir[$i])){
-      array_push($files, ["name" => $dir[$i], "path" => '/site/img/slider/'.$dir[$i]]);
+      array_push($files, ["name" => $dir[$i], "path" => '/site./assets/img/slider/'.$dir[$i]]);
     }
   }
 
   return $files;
 }
 
-print_r(json_encode(getFiles('../../img/slider')));
+print_r(json_encode(getFiles('./assets/./assets/img/slider')));
