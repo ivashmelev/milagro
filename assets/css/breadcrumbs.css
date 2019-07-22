@@ -1,0 +1,13 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.breadcrumbs .link {
+  font-size: 15px;
+  color: #ADADAD;
+}
+
+/*# sourceMappingURL=breadcrumbs.css.map */

@@ -1,0 +1,102 @@
+.discount {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  width: 1195px;
+}
+.discount .head {
+  width: 72px;
+  margin-left: 20px;
+}
+.discount .head .title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #E08298;
+  height: 3px;
+  position: relative;
+  top: 6px;
+}
+.discount .block-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.discount .block-card .card {
+  width: 360px;
+  height: 480px;
+  border: 1px solid #070606;
+  margin: 30px 17.5px;
+  position: relative;
+}
+.discount .block-card .card .header {
+  margin-left: 10px;
+  margin-top: -13px;
+  display: block;
+  background-color: white;
+  width: max-content;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.discount .block-card .card .img-card {
+  position: absolute;
+  z-index: 20;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.discount .block-card .card .card-hover {
+  opacity: 0;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.discount .block-card .button {
+  display: flex;
+  flex-direction: row;
+  width: 180px;
+  height: 42px;
+  background-color: #E08298;
+  margin-top: 440px;
+  margin-left: 150px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 10px solid white;
+  position: relative;
+  z-index: 50;
+}
+.discount .block-card .button .text {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  margin: unset;
+}
+.discount .block-card .button:hover {
+  cursor: pointer;
+  background-color: #e06b87;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media only screen and (min-width: 678px) and (max-width: 1170px) {
+  .discount {
+    width: unset;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 413px) {
+  .discount {
+    width: unset;
+  }
+  .discount .block-card {
+    width: 59%;
+  }
+  .discount .block-card .card .header {
+    margin-left: 100px;
+  }
+}
+@media only screen and (min-width: 413px) and (max-width: 678px) {
+  .discount {
+    width: unset;
+  }
+}
+
+/*# sourceMappingURL=discount.css.map */

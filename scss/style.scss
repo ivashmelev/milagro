@@ -5,6 +5,9 @@
 @import '../css/banner.css';
 @import '../css/info.css';
 @import '../css/footer.css';
+@import '../css/breadcrumbs.css';
+@import '../css/discount.css';
+@import '../css/feedback.css';
 
 html, body {
   width: 100%;
@@ -13,8 +16,39 @@ html, body {
   font-family: Open Sans
 }
 
+.title{
 
+  h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
 
+    &::after{
+      content: "";
+      width: 8%;
+      margin: auto;
+      position: relative;
+      height: 2px;
+      background-color: #E08298;
+      top: 10px;
+      display: flex;
+    }
+  }
+}
+
+.title.left{
+  width: 66%;
+  margin: auto;
+
+  h2{
+    text-align: left;
+
+    &::after{
+      margin: unset;
+    }
+  }
+}
+  
 
 @media only screen and (min-width: 320px) and (max-width: 678px) {
   .content{

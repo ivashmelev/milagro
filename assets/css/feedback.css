@@ -1,0 +1,104 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1170px;
+  height: 345px;
+  margin: auto;
+  align-items: center;
+  background-color: #F3F3F3;
+}
+.feedback .head .title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #E08298;
+  height: 3px;
+  position: relative;
+  top: 6px;
+}
+.feedback .form .input {
+  display: flex;
+  flex-direction: row;
+}
+.feedback .form .input input {
+  height: 42px;
+  width: 255px;
+  border: 1px solid #E7E7E7;
+  background-color: #FFFFFF;
+  outline: none;
+  margin: 10px;
+  padding-left: 30px;
+}
+.feedback .form .input .load_image {
+  display: flex;
+  flex-direction: row;
+  background-color: #A9A9A9;
+  height: 42px;
+  width: 285px;
+  margin: 10px;
+}
+.feedback .form .input .load_image input {
+  opacity: 0;
+  position: absolute;
+  height: 30px;
+  z-index: 100;
+}
+.feedback .form .input .load_image input:hover {
+  cursor: pointer;
+}
+.feedback .form .input .load_image img {
+  width: 50px;
+  height: 42px;
+  border-right: 1px solid rgba(255, 255, 255, 0.356);
+}
+.feedback .form .input .load_image .text {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  margin: unset;
+}
+.feedback .form .button button {
+  width: 97%;
+  margin: 10px;
+  height: 48px;
+  background-color: #E08298;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.feedback .form .button button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 678px) and (max-width: 1170px) {
+  .feedback {
+    height: 500px;
+    width: unset;
+  }
+  .feedback .form .input {
+    flex-direction: column;
+  }
+  .feedback .form .button button {
+    width: 93%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 678px) {
+  .feedback {
+    height: 500px;
+    width: unset;
+  }
+  .feedback .form .input {
+    flex-direction: column;
+  }
+  .feedback .form .button button {
+    width: 93%;
+  }
+}
+
+/*# sourceMappingURL=feedback.css.map */
