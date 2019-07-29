@@ -17,7 +17,7 @@
     <section class="content">
       <?php require_once ('slider.html'); ?>
       <?php require_once ('collection.html'); ?>
-      <div class="title">
+      <div class="title new_collection">
         <h2>Новые коллекции</h2>
       </div>
       <?php require_once ('new_collection.html'); ?>

@@ -6,13 +6,13 @@
   margin: auto;
   margin-top: 50px;
 }
-.info .discount {
+.info .discount-info {
   background-image: url("../img/info_img.png");
   width: 429px;
   position: relative;
   background-size: cover;
 }
-.info .discount .hover {
+.info .discount-info .hover {
   position: absolute;
   border: 1px solid #FFFFFF;
   height: 85%;
@@ -20,7 +20,7 @@
   left: 20px;
   top: 20px;
 }
-.info .discount .button {
+.info .discount-info .button {
   display: flex;
   flex-direction: row;
   width: 180px;
@@ -31,18 +31,18 @@
   margin-left: 53.1%;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.info .discount .button:hover {
+.info .discount-info .button:hover {
   cursor: pointer;
   background-color: #e06b87;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.info .discount .button img {
+.info .discount-info .button img {
   width: 17px;
   height: 19px;
   padding: 13px 11px;
   border-right: 1px solid #ffffff33;
 }
-.info .discount .button .text {
+.info .discount-info .button .text {
   text-align: center;
   width: 100%;
   display: flex;
@@ -85,10 +85,10 @@
     width: unset;
     align-items: center;
   }
-  .info .discount {
+  .info .discount-info {
     width: -webkit-fill-available;
   }
-  .info .discount .button {
+  .info .discount-info .button {
     display: flex;
     flex-direction: row;
     width: 180px;

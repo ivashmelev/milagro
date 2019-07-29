@@ -147,10 +147,10 @@
   font-size: 15px;
   color: #808080;
 }
-.new_collection .product .product_card .price .discount {
+.new_collection .product .product_card .price .discount_text {
   display: none;
 }
-.new_collection .product .product_card .price .discount.active {
+.new_collection .product .product_card .price .discount_text.active {
   display: block;
   font-size: 15px;
   color: black;

@@ -6,7 +6,7 @@
   margin: auto;
   margin-top: 50px;
 
-  .discount{
+  .discount-info{
     background-image: url('../img/info_img.png');
     width: 429px;
     position: relative;
@@ -95,7 +95,7 @@
     width: unset;
     align-items: center;
 
-    .discount{
+    .discount-info{
       width: -webkit-fill-available;
       
       .button{

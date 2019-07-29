@@ -20,7 +20,7 @@
         <span class="link">&nbsp;/&nbsp;Акции&nbsp;</span>
       </div>
       <?php require_once ('discount.html'); ?>
-      <div class="title left">
+      <div class="title_discount_page left">
         <h2>Товары со скидкой</h2>
       </div>
       <?php require_once ('new_collection.html'); ?>
