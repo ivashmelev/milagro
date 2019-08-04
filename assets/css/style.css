@@ -8,6 +8,7 @@
 @import '../css/breadcrumbs.css';
 @import '../css/discount.css';
 @import '../css/feedback.css';
+@import '../css/productPage.css';
 html, body {
   width: 100%;
   margin: 0;
