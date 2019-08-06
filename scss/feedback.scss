@@ -1,3 +1,15 @@
+.feedback.order{
+  width: 780px;
+  position: fixed;
+  z-index: 400;
+  display: none;
+  top: 20%;
+}
+
+.feedback.order.active{
+  display: flex;
+}
+
 .feedback{
   display: flex;
   flex-direction: column;
@@ -26,6 +38,33 @@
     .input{
       display: flex;
       flex-direction: row;
+      position: relative;
+
+      .input_icon{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 22px;
+        left: 36px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .input_icon.name{
+        background-image: url(../img/name.png);
+      }
+
+      .input_icon.phone{
+        background-image: url(../img/phone_form.png);
+      }
+
+      .input_icon.mail{
+        background-image: url(../img/mail_form.png);
+      }
+
+      .input_icon.address{
+        background-image: url(../img/address.png);
+      }
 
       input{
         height: 42px;
@@ -44,6 +83,14 @@
         height: 42px;
         width: 285px;
         margin: 10px;
+
+        .feedback_img{
+          background-image: url(../img/data_img.png);
+          width: 50px;
+          border-right: 1px solid #ffffff33;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
 
         input{
           opacity: 0;
@@ -77,14 +124,15 @@
     .button{
 
       button{
-        width: 97%;
+        width: 93.8%;
         margin: 10px;
+        margin-left: 30px;
         height: 48px;
         background-color: #E08298;
         border: none;
         color: white;
-        font-size: 18px;	
-        font-weight: 600;	
+        font-size: 18px;
+        font-weight: 600;
 
         &:hover{
           cursor: pointer;
@@ -103,12 +151,18 @@
 
       .input{
         flex-direction: column;
+
+        .input_icon{
+          top: 40px;
+          left: 16px;
+        }
       }
 
       .button{
 
         button{
           width: 93%;
+          margin-left: 10px;
         }
       }
     }
@@ -124,12 +178,18 @@
 
       .input{
         flex-direction: column;
+
+        .input_icon{
+          top: 40px;
+          left: 16px;
+        }
       }
 
       .button{
 
         button{
           width: 93%;
+          margin-left: 10px;
         }
       }
     }

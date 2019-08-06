@@ -1,0 +1,20 @@
+.search {
+  width: 65%;
+  font-style: italic;
+  margin: auto;
+  display: none;
+}
+.search .wrapper_search input {
+  width: 100%;
+  padding-left: 30px;
+  height: 25px;
+  outline: none;
+  border: 2px solid #5a5a5a;
+  border-radius: 4px;
+}
+
+.search.active {
+  display: block;
+}
+
+/*# sourceMappingURL=search.css.map */

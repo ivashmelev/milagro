@@ -9,11 +9,36 @@
 @import '../css/discount.css';
 @import '../css/feedback.css';
 @import '../css/productPage.css';
+@import '../css/catalogMenu.css';
+@import '../css/filter.css';
+@import '../css/pagination.css';
+@import '../css/popup.css';
+@import '../css/productPopup.css';
+@import '../css/search.css';
 html, body {
   width: 100%;
   margin: 0;
   padding: 0;
   font-family: Open Sans;
+}
+
+.hide {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 300;
+  background-color: rgba(0, 0, 0, 0.522);
+  display: none;
+}
+
+.hide.active {
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title.new_collection h2 {
@@ -53,6 +78,13 @@ html, body {
   font-family: "Open Sans";
   font-size: 16px;
   line-height: 26px;
+}
+
+.catalog_block {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 678px) and (max-width: 1170px) {

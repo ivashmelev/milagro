@@ -69,12 +69,12 @@
 
 @media only screen and (min-width: 678px) and (max-width: 1170px) {
   .collection {
-    width: unset;
+    width: 80%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 413px) {
   .collection {
-    width: unset;
+    width: 80%;
   }
   .collection .block-card {
     width: 59%;

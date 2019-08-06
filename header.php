@@ -14,16 +14,18 @@
         <span class="stat"></span>
         <img src="./assets/img/delivery.png" alt="">
       </div>
-      <div class="icon">
+      <div class="icon" id="search">
         <span class="stat"></span>
         <img src="./assets/img/search.png" alt="">
       </div>
-      <div class="icon is-stat">
+      <div class="icon is-stat" id='cart'>
         <span class="stat">2</span>
         <img src="./assets/img/cart.png" alt="">
       </div>
+      <?php require_once ('productPopup.html'); ?>
     </div>
   </div>
+  <?php require_once ('search.html'); ?>
   <div class="menu">
     <div class="hamburger">
       <span class="line"></span>

@@ -28,6 +28,7 @@ header {
 .block .icons {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .block .icons .icon {
   padding: 0 22px;
@@ -70,6 +71,7 @@ header {
   font-size: 17px;
   color: black;
   padding: 0 15px;
+  height: 50px;
 }
 .menu .text {
   margin-left: 10px;
@@ -141,6 +143,9 @@ header {
     margin-top: 70px;
     border: none;
   }
+  .menu a {
+    height: unset;
+  }
   .menu .text::after {
     top: 4px;
   }
@@ -178,6 +183,9 @@ header {
     border-bottom: 1px solid black;
     margin: auto;
     margin-top: 30px;
+  }
+  .menu a {
+    height: unset;
   }
   .menu .text::after {
     top: 4px;

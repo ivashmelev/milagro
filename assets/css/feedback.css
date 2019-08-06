@@ -1,3 +1,15 @@
+.feedback.order {
+  width: 780px;
+  position: fixed;
+  z-index: 400;
+  display: none;
+  top: 20%;
+}
+
+.feedback.order.active {
+  display: flex;
+}
+
 .feedback {
   display: flex;
   flex-direction: column;
@@ -20,6 +32,28 @@
 .feedback .form .input {
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+.feedback .form .input .input_icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 22px;
+  left: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feedback .form .input .input_icon.name {
+  background-image: url(../img/name.png);
+}
+.feedback .form .input .input_icon.phone {
+  background-image: url(../img/phone_form.png);
+}
+.feedback .form .input .input_icon.mail {
+  background-image: url(../img/mail_form.png);
+}
+.feedback .form .input .input_icon.address {
+  background-image: url(../img/address.png);
 }
 .feedback .form .input input {
   height: 42px;
@@ -37,6 +71,13 @@
   height: 42px;
   width: 285px;
   margin: 10px;
+}
+.feedback .form .input .load_image .feedback_img {
+  background-image: url(../img/data_img.png);
+  width: 50px;
+  border-right: 1px solid #ffffff33;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .feedback .form .input .load_image input {
   opacity: 0;
@@ -63,8 +104,9 @@
   margin: unset;
 }
 .feedback .form .button button {
-  width: 97%;
+  width: 93.8%;
   margin: 10px;
+  margin-left: 30px;
   height: 48px;
   background-color: #E08298;
   border: none;
@@ -84,8 +126,13 @@
   .feedback .form .input {
     flex-direction: column;
   }
+  .feedback .form .input .input_icon {
+    top: 40px;
+    left: 16px;
+  }
   .feedback .form .button button {
     width: 93%;
+    margin-left: 10px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 678px) {
@@ -96,8 +143,13 @@
   .feedback .form .input {
     flex-direction: column;
   }
+  .feedback .form .input .input_icon {
+    top: 40px;
+    left: 16px;
+  }
   .feedback .form .button button {
     width: 93%;
+    margin-left: 10px;
   }
 }
 

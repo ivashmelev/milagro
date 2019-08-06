@@ -1,0 +1,244 @@
+.catalog_menu {
+  width: 280px;
+  border-right: 1px solid #E7E7E7;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.catalog_menu .title_menu h2 {
+  color: #000000;
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid #E7E7E7;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  height: 40px;
+}
+.catalog_menu .menu_element {
+  display: flex;
+  flex-direction: column;
+}
+.catalog_menu .menu_element .title_element h3 {
+  margin-top: 15px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.catalog_menu .menu_element .option_element {
+  margin-left: 5px;
+}
+.catalog_menu .menu_element .option_element .option {
+  margin-top: 5px;
+}
+.catalog_menu .menu_element .option_element .option a {
+  color: #000000;
+  font-size: 18px;
+}
+.catalog_menu .menu_element .option_element .option a:hover {
+  color: #E08298;
+}
+.catalog_menu .element_block_card {
+  margin-top: 40px;
+}
+.catalog_menu .element_block_card .card_img {
+  position: relative;
+}
+.catalog_menu .element_block_card .card_img .img-card {
+  position: relative;
+  z-index: 20;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.catalog_menu .element_block_card .card .header {
+  margin-left: 30px;
+  margin-top: 3px;
+  display: block;
+  width: max-content;
+  color: white;
+  font-weight: bold;
+  padding: 0 10px;
+  z-index: 50;
+  position: absolute;
+}
+.catalog_menu .element_product_card {
+  width: 284px;
+  margin: 20px -5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.catalog_menu .element_product_card .block_card:hover {
+  cursor: pointer;
+}
+.catalog_menu .element_product_card .icon_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+.catalog_menu .element_product_card .icon_block .icon_new {
+  margin-left: 16px;
+  margin-top: 16px;
+  background-image: url("../img/new.png");
+  width: 35px;
+  height: 34px;
+  background-repeat: no-repeat;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.catalog_menu .element_product_card .icon_block .icon_like {
+  margin-right: 16px;
+  margin-top: 16px;
+  background-image: url("../img/product_like.png");
+  width: 35px;
+  height: 34px;
+  background-repeat: no-repeat;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.catalog_menu .element_product_card .icon_block .icon_like:hover {
+  cursor: pointer;
+  background-image: url("../img/product_like_hover.png");
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.catalog_menu .element_product_card .discount-mark {
+  display: none;
+}
+.catalog_menu .element_product_card .discount-mark.active {
+  width: 170px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 300px;
+  left: 16px;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.catalog_menu .element_product_card .discount-mark.active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 6px;
+  background-color: #E08298;
+  top: 0;
+  left: 0;
+}
+.catalog_menu .element_product_card .discount-mark.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 6px;
+  background-color: #E08298;
+  top: 90%;
+  left: 0;
+}
+.catalog_menu .element_product_card .discount-mark.active .head {
+  font-size: 15px;
+  font-weight: bold;
+}
+.catalog_menu .element_product_card .discount-mark.active .text {
+  font-size: 15px;
+  margin: unset;
+}
+.catalog_menu .element_product_card .text {
+  margin-top: 8px;
+}
+.catalog_menu .element_product_card .text a {
+  font-size: 15px;
+  color: #C75A73;
+  font-weight: bold;
+  text-align: center;
+}
+.catalog_menu .element_product_card .text:hover a {
+  color: #ca002e;
+}
+.catalog_menu .element_product_card .properties {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 26px;
+}
+.catalog_menu .element_product_card .properties .article, .catalog_menu .element_product_card .properties .existence {
+  display: flex;
+  flex-direction: row;
+}
+.catalog_menu .element_product_card .properties .article .option, .catalog_menu .element_product_card .properties .existence .option {
+  font-size: 13px;
+  color: #808080;
+}
+.catalog_menu .element_product_card .properties .article .result, .catalog_menu .element_product_card .properties .existence .result {
+  color: black;
+  font-size: 13px;
+}
+.catalog_menu .element_product_card .price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.catalog_menu .element_product_card .price .text {
+  font-size: 15px;
+  color: #808080;
+}
+.catalog_menu .element_product_card .price .discount_text {
+  display: none;
+}
+.catalog_menu .element_product_card .price .discount_text.active {
+  display: block;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+.catalog_menu .element_product_card .price .result {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+.catalog_menu .element_product_card .button {
+  display: flex;
+  flex-direction: row;
+  width: 180px;
+  height: 42px;
+  background-color: #E08298;
+  margin: 25px auto;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.catalog_menu .element_product_card .button img {
+  width: 17px;
+  height: 19px;
+  padding: 12px 11px;
+  border-right: 1px solid #ffffff33;
+}
+.catalog_menu .element_product_card .button .text {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  margin: unset;
+}
+.catalog_menu .element_product_card .button:hover {
+  cursor: pointer;
+  background-color: #e06b87;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media only screen and (min-width: 678px) and (max-width: 1170px) {
+  .catalog_menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 678px) {
+  .catalog_menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=catalogMenu.css.map */

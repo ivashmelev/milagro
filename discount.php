@@ -11,10 +11,13 @@
 </head>
 <body>
   <div class="wrapper">
+    <div class="hide"></div>
     <section class="header">
-      <?php require_once ('header.html'); ?>
+      <?php require_once ('header.php'); ?>
     </section>
     <section class="content">
+      <?php require_once ('order.html'); ?>
+      <?php require_once ('popup.html'); ?>
       <div class="breadcrumbs">
         <a href="./index.php" class="link">Главная</a>
         <span class="link">&nbsp;/&nbsp;Акции&nbsp;</span>

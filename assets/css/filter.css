@@ -1,0 +1,144 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.filter .nav_filter {
+  display: flex;
+  background-color: #E7E7E7;
+  justify-content: space-between;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 1px solid #ededed;
+}
+.filter .nav_filter .filter_element {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+.filter .nav_filter .filter_element.link {
+  background-color: #ededed;
+  margin: 0;
+}
+.filter .nav_filter .filter_element.link .element_title.link::after {
+  display: none;
+}
+.filter .nav_filter .filter_element .element_title {
+  width: 100px;
+  text-align: center;
+}
+.filter .nav_filter .filter_element .element_title::after {
+  background-image: url(../img/open_filter.png);
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background-repeat: no-repeat;
+  top: -10px;
+  margin-left: auto;
+}
+.filter .nav_filter .filter_element .element_title span {
+  font-size: 15px;
+  color: #000000;
+  width: 81px;
+  display: block;
+}
+.filter .nav_filter .filter_element .element {
+  outline: #E7E7E7;
+  position: absolute;
+  width: 100px;
+  opacity: 0;
+}
+.filter .nav_filter .filter_element .element option {
+  background-color: #E7E7E7;
+}
+.filter .nav_sort {
+  display: flex;
+  border: 1px solid black;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 1px solid #ededed;
+  justify-content: space-between;
+}
+.filter .nav_sort .sort_block {
+  display: flex;
+}
+.filter .nav_sort .sort_element {
+  display: flex;
+  align-items: center;
+}
+.filter .nav_sort .sort_element .element_title {
+  text-align: center;
+}
+.filter .nav_sort .sort_element .element_title::after {
+  background-image: url(../img/open_filter.png);
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background-repeat: no-repeat;
+  top: -10px;
+  margin-left: auto;
+}
+.filter .nav_sort .sort_element .element_title span {
+  font-size: 15px;
+  color: #000000;
+  width: 130px;
+  display: block;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: #505050;
+}
+.filter .nav_sort .sort_element .element {
+  outline: #E7E7E7;
+  position: absolute;
+  width: 130px;
+  opacity: 0;
+}
+.filter .nav_sort .sort_element .element option {
+  background-color: #E7E7E7;
+}
+.filter .nav_sort .sort_element .element_title.header {
+  margin-left: 30px;
+}
+.filter .nav_sort .sort_element .element_title.header::after {
+  display: none;
+}
+.filter .nav_sort .sort_element .element_title.header span {
+  width: unset;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+@media only screen and (min-width: 678px) and (max-width: 1170px) {
+  .filter .nav_filter {
+    align-items: center;
+    flex-direction: column;
+    height: 390px;
+    background-color: white;
+    border: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 678px) {
+  .filter .nav_filter {
+    align-items: center;
+    flex-direction: column;
+    height: 390px;
+    background-color: white;
+    border: none;
+  }
+  .filter .nav_sort {
+    flex-direction: column;
+    margin-left: 0;
+    border: 0;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=filter.css.map */

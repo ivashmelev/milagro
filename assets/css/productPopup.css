@@ -1,0 +1,118 @@
+.product_popup {
+  position: absolute;
+  background-color: white;
+  top: 60px;
+  left: -15px;
+  z-index: -1;
+  opacity: 0;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.product_popup.active {
+  z-index: 300;
+  opacity: 1;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.wrapper_product_popup {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: -1px 3px 9px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+  border-top: 3px solid #5b5b5b;
+  position: relative;
+}
+.wrapper_product_popup::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 20px;
+  background-color: #5b5b5b;
+  position: absolute;
+  top: -20px;
+  left: 87%;
+  z-index: 20;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.wrapper_product_popup .product_popup_title h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  width: max-content;
+  margin: 10px 0;
+}
+.wrapper_product_popup .product_popup_title h3::after {
+  content: "";
+  width: 100%;
+  margin: auto;
+  position: relative;
+  height: 2px;
+  background-color: #E08298;
+  top: 10px;
+  display: flex;
+}
+.wrapper_product_popup .product_popup_block {
+  margin-top: 20px;
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cbcbcb;
+}
+.wrapper_product_popup .product_popup_block .block_content {
+  width: 135px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper_product_popup .product_popup_block .block_content .content_description {
+  margin-top: 20px;
+  display: flex;
+}
+.wrapper_product_popup .product_popup_block .block_content .content_description .description_name {
+  color: #5e5e5e;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper_product_popup .product_popup_block .block_content .content_description .description_value {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper_product_popup .product_popup_button {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper_product_popup .product_popup_button .button {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 42px;
+  background-color: #E08298;
+  margin: 5px auto;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.wrapper_product_popup .product_popup_button .button .text {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  margin: unset;
+}
+.wrapper_product_popup .product_popup_button .button:hover {
+  cursor: pointer;
+  background-color: #e06b87;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.wrapper_product_popup .product_popup_button .button.grey {
+  background-color: #a9a9a9;
+}
+.wrapper_product_popup .product_popup_button .button.grey:hover {
+  background-color: #797979;
+}
+
+/*# sourceMappingURL=productpopup.css.map */
